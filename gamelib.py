@@ -82,8 +82,9 @@ class Text(GameCanvasElement):
         
 
 class Sprite(GameCanvasElement):
-    def __init__(self, game_app, image_filename, x=0, y=0):
+    def __init__(self, game_app, image_filename, x=0, y=0, photo_image=None):
         self.image_filename = image_filename
+        self.photo_image = photo_image
         super().__init__(game_app, x, y)
 
     def init_canvas_object(self):
